@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Css bootstrap</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<title></title><!-- Nuestro css-->
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+	
+	<div class="modal-dialog text-center">
+		<div class="col-sm-8 main-section">
+			<div class="modal-content">
+				<div class="col-12 user-img">
+					<img src="https://www.freepngimg.com/thumb/facebook/62681-flat-icons-face-computer-design-avatar-icon-thumb.png">
+				</div><br>
+				<form class="col-12">
+					
+						<div id="id_usr2" class="form-group">
+							<label class="control-label" for="id_usr">Id Usuario :</label><br>
+							<input id="id_usr" class="form-control" required="" type="text" name="id_usr" pattern="[0-9]+" placeholder="Id Usuario" maxlength="11">
+						</div>
+						<div class="form-group">
+							<label class="control-label" for="idPais">Id Pais :</label><br>
+							<select id="idPais" class="form-control" name="select">
+								<option value=""><p style="color: #9C9888";>Seleccione País</p></option>
+								<option>124-Colombia</option>
+								<option>654-Chile</option>
+								<option>567-México</option>
+								<option>536-Argentina</option>
+								<option>674-España</option>
+								<option>908-Cuba</option>
+								<option>883-Venezuela</option>
+							</select>
+						</div>
+									
+						<div id="nombre2"class="form-group">
+							<label class="control-label" for="nombre">Nombre :</label><br>
+							<input class="form-control" id="nombre" class="form-control" required="" placeholder="Nombre" type="text" name="nombre" maxlength="25">
+						</div>
+						<div id="apellido2" class="form-group">
+							<label class="control-label" for="apellido">Apellido :</label><br>
+							<input id="apellido" class="form-control" required="" placeholder="Apellido" type="text" name="apellido" maxlength="25">
+						</div>
+						<div class="form-group">
+							<label class="control-label" for="direccion">Dirección :</label><br>
+							<select id="tipo_dir" class="form-control" name="select">
+								<option value=""><p style="color: #9C9888";>Seleccione Tipo de dirección</p></option>
+								<option>Cll</option>
+								<option>Cra</option>
+								<option>Av</option>
+								<option>Avn</option>
+								<option>Trans</option>
+							</select>
+							<input class="form-control" placeholder="Dirección" type="text" name="direccion" maxlength="45">
+						</div>
+						<div id="ccusuario2" class="form-group">
+							<label class="control-label" for="ccusuario">Cédula Usuario :</label><br>
+							<input pattern="[A-Za-z0-9]{1,20}" id="ccusuario" class="form-control" required="" placeholder="CCusuario" type="text" name="ccusuario" maxlength="20" minlength="10">
+						</div>
+						<div id="ccpassword2" class="form-group">
+							<label class="control-label" for="ccpassword">Contraseña :</label><br>
+							<input id="ccpassword" class="form-control" required="" placeholder="Contraseña" type="password" name="ccpassword" maxlength="20" minlength="15">
+						</div>
+
+						<div id="conf_psw2" class="form-group">
+							<label class="control-label" for="conf_psw">Confirme su contraseña :</label><br>
+							<input id="conf_psw" class="form-control" required="" placeholder="confirmar contraseña" type="password" name="conf_psw" maxlength="20" minlength="15">
+						</div>
+
+						<div id="email2" class="form-group">
+							<label class="control-label" for="email">Email :</label><br>
+							<input required="" id="email" class="form-control" placeholder="E-mail" type="email" name="email" maxlength="120">
+						</div>
+						<div id="telefono2" class="form-group">
+							<label class="control-label" for="telefono">Telefono :</label><br>
+							<input class="form-control" placeholder="Teléfono" type="number" name="telefono" maxlength="20">
+						</div><br>
+						<div>
+							<label class="control-label">REGISTRO DE GUSTOS</label>
+						</div><br>
+						<div>
+							<label class="control-label">- Color Favorito</label><br>
+							<label><input type="radio" name="color" value="azul">Azul</label>
+							<label><input type="radio" name="color" value="rojo">Rojo</label>
+							<label><input type="radio" name="color" value="verde">Verde</label>
+							<label><input type="radio" name="color" value="amarillo">Amarillo</label>
+							<label><input type="radio" name="color" value="rosa">Rosa</label><br>
+							<label><input type="radio" name="color" value="dorado">Dorado</label>
+							<label><input type="radio" name="color" value="celeste">Celeste</label>
+							<label><input type="radio" name="color" value="morado">Morado</label>
+							<label><input type="radio" name="color" value="otro">Otro</label>
+						</div><br>
+						<div>
+							<label class="control-label">- Marca de carro favorita</label><br>
+							<label><input type="radio" name="marca" value="Nissan">Nissan</label>
+							<label><input type="radio" name="marca" value="Toyota">Toyota</label>
+							<label><input type="radio" name="marca" value="Chevrolet">Chevrolet</label>
+							<label><input type="radio" name="marca" value="Renault">Renault</label>
+							<label><input type="radio" name="marca" value="Ford">Ford</label><br>
+							<label><input type="radio" name="marca" value="Ferrari">Ferrari</label>
+							<label><input type="radio" name="marca" value="KIA">KIA</label>
+							<label><input type="radio" name="marca" value="Hyundai">Hyundai</label>
+							<label><input type="radio" name="marca" value="otro">Otro</label>
+						</div><br>
+						<div>
+							<label class="control-label">- Estilo de carro favorita</label><br>
+							<label><input type="radio" name="estilo" value="Monovolumen">Monovolumen</label>
+							<label><input type="radio" name="estilo" value="Berlina">Berlina</label>
+							<label><input type="radio" name="estilo" value="Cupé">Cupé</label>
+							<label><input type="radio" name="estilo" value="Hatchback">Hatchback</label>
+							<label><input type="radio" name="estilo" value="Cabriolet">Cabriolet</label><br>
+							<label><input type="radio" name="estilo" value="Roadster">Roadster</label>
+							<label><input type="radio" name="estilo" value="Tourer">Tourer</label>
+							<label><input type="radio" name="estilo" value="Todoterreno">Todoterreno</label>
+							<label><input type="radio" name="estilo" value="otro">Otro</label>
+						</div><br>
+						<div>
+							<label class="control-label">- Modelo de carro favorita</label><br>
+							<label><input type="radio" name="modelo" value="2000">2000</label>
+							<label><input type="radio" name="modelo" value="2002">2002</label>
+							<label><input type="radio" name="modelo" value="2005">2005</label>
+							<label><input type="radio" name="modelo" value="2010">2010</label>
+							<label><input type="radio" name="modelo" value="2012">2012</label><br>
+							<label><input type="radio" name="modelo" value="2015">2015</label>
+							<label><input type="radio" name="modelo" value="2018">2018</label>
+							<label><input type="radio" name="modelo" value="2020">2020</label>
+							<label><input type="radio" name="modelo" value="otro">Otro</label>
+						</div><br>
+						<label class="control-label">¿Cuánto está dispuesto a gastar en un vehículo?</label><br>
+						<center><div class="middle">
+							<div class="multi-range-slider">10 Millones - 100 Millones</div><br>
+							<input type="range" id="input-left" min="0" max="100" value="25">
+							<input type="range" id="input-right" min="0" max="100" value="75">
+							<div class="slider">
+								<div class="track"></div>
+								<div class="range"></div>
+								<div class="thumb-left"></div>
+								<div class="thumb-right"></div>
+							</div><br>
+						</div></center>
+
+						<input class="btn btn-primary" type="submit" value="Registrarse" onclick="Registrar();">
+					<br>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+
+</body>
+</html>
